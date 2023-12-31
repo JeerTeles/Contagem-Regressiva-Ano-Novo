@@ -40,3 +40,18 @@ body {
 .time small {
     color: #ccc;
 }
+
+#myModal {
+    display: none;
+    position: fixed;
+    width: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -015%);
+    padding: 20px;
+    color: #000;
+    font-size: x-large;
+    background-color: #f1f1f1;
+    border: 1px solid #888;
+    text-align: center;
+}
