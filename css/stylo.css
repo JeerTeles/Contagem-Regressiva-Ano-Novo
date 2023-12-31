@@ -50,3 +50,51 @@ body {
     outline: 5px solid #fff;
     border-radius: 10px;
 }
+
+@media screen and (min-width: 1023px){
+    #myModal {
+        width: 90vw; /* Reduza a largura máxima em telas menores */
+        height: 85vh;
+    }
+
+    #myModal #myVideo {
+        width: 90vw; /* Reduza a largura máxima em telas menores */
+        height: 95%
+    }
+}
+
+@media screen and (max-width: 1022px) and (min-width: 768px) {
+    #myModal {
+        width: 90vw; /* Reduza a largura máxima em telas menores */
+        height: 90vh;
+    }
+
+    #myModal #myVideo {
+        width: 90vw; /* Reduza a largura máxima em telas menores */
+        height: 93%
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 480px) {
+    #myModal {
+        width: 90vw; /* Reduza a largura máxima em telas menores */
+        height: 90vh;
+    }
+
+    #myModal #myVideo {
+        width: 90vw; /* Reduza a largura máxima em telas menores */
+        height: 93%
+    }
+}
+
+@media screen and (max-width: 650px) and (min-width: 479px) {
+    #myModal {
+        width: 90vw; /* Reduza a largura máxima em telas menores */
+        height: 70vh;
+    }
+
+    #myModal #myVideo {
+        width: 90vw; /* Reduza a largura máxima em telas menores */
+        height: 93%
+    }
+}
