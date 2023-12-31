@@ -114,3 +114,19 @@ body {
         height: 100vh;
     }
 }
+
+@media screen and (max-width: 479px) {
+    #myModal {
+        width: 90vw; /* Reduza a largura máxima em telas menores */
+        height: 70vh;
+    }
+
+    #myModal #myVideo {
+        width: 90vw; /* Reduza a largura máxima em telas menores */
+        height: 90%
+    }
+
+    body {
+        height: 100vh;
+    }
+}
