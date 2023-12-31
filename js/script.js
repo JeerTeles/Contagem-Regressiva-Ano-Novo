@@ -1,5 +1,5 @@
 const body = document.body;
-const endTime = new Date('Decembre 31 2023 12:39:00');
+const endTime = new Date('Decembre 31 2023 13:24:00');
 const daysE1 = document.getElementById('days');
 const hoursE1 = document.getElementById('hours');
 const minutesE1 = document.getElementById ('minutes');
@@ -24,9 +24,32 @@ function updateCountdown() {
     }
 }
 
-
 function showModal() {
     const modal = document.getElementById('myModal');
     modal.style.display = 'block';
+
+    if (!player) {
+        player = new YT.Player('myVideo', {
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
 }
+
+function onPlayerReady(event) {
+    // Iniciar a reprodução do vídeo e configurar o loop
+    event.target.playVideo();
+    event.target.setLoop(true);
+}
+
+function onPlayerStateChange(event) {
+    // Reiniciar o vídeo quando atingir o fim (estado 0)
+    if (event.data === 0) {
+        event.target.seekTo(0);
+        event.target.playVideo();
+    }
+}
+
 
